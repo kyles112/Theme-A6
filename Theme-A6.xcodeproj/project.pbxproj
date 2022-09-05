@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		F8842EE028C457ED00CFCF46 /* Theme_A6App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8842EDF28C457ED00CFCF46 /* Theme_A6App.swift */; };
-		F8842EE228C457ED00CFCF46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8842EE128C457ED00CFCF46 /* ContentView.swift */; };
+		F8842EE228C457ED00CFCF46 /* ThemeChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8842EE128C457ED00CFCF46 /* ThemeChooserView.swift */; };
 		F8842EE428C457EE00CFCF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8842EE328C457EE00CFCF46 /* Assets.xcassets */; };
 		F8842EE728C457EE00CFCF46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8842EE628C457EE00CFCF46 /* Preview Assets.xcassets */; };
+		F8842EEE28C4580D00CFCF46 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8842EED28C4580D00CFCF46 /* Theme.swift */; };
+		F8842EF228C4591100CFCF46 /* ThemeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8842EF128C4591100CFCF46 /* ThemeStore.swift */; };
+		F8842EF628C45CA700CFCF46 /* Color+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8842EF528C45CA700CFCF46 /* Color+RGBA.swift */; };
+		F8CE02B028C5D6DE00AEFDF8 /* String+RemovingDuplicateCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE02AF28C5D6DE00AEFDF8 /* String+RemovingDuplicateCharacters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F8842EDC28C457ED00CFCF46 /* Theme-A6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Theme-A6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8842EDF28C457ED00CFCF46 /* Theme_A6App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme_A6App.swift; sourceTree = "<group>"; };
-		F8842EE128C457ED00CFCF46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F8842EE128C457ED00CFCF46 /* ThemeChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChooserView.swift; sourceTree = "<group>"; };
 		F8842EE328C457EE00CFCF46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8842EE628C457EE00CFCF46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8842EED28C4580D00CFCF46 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F8842EF128C4591100CFCF46 /* ThemeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeStore.swift; sourceTree = "<group>"; };
+		F8842EF528C45CA700CFCF46 /* Color+RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+RGBA.swift"; sourceTree = "<group>"; };
+		F8CE02AF28C5D6DE00AEFDF8 /* String+RemovingDuplicateCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+RemovingDuplicateCharacters.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				F8842EDF28C457ED00CFCF46 /* Theme_A6App.swift */,
-				F8842EE128C457ED00CFCF46 /* ContentView.swift */,
+				F8842EF428C459BD00CFCF46 /* Utilities */,
+				F8842EF328C4597A00CFCF46 /* View Models */,
+				F8842EEF28C458A500CFCF46 /* Model */,
+				F8842EF028C458BB00CFCF46 /* Views */,
 				F8842EE328C457EE00CFCF46 /* Assets.xcassets */,
 				F8842EE528C457EE00CFCF46 /* Preview Content */,
 			);
@@ -65,6 +76,39 @@
 				F8842EE628C457EE00CFCF46 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8842EEF28C458A500CFCF46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8842EED28C4580D00CFCF46 /* Theme.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F8842EF028C458BB00CFCF46 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8842EE128C457ED00CFCF46 /* ThemeChooserView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F8842EF328C4597A00CFCF46 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8842EF128C4591100CFCF46 /* ThemeStore.swift */,
+			);
+			name = "View Models";
+			sourceTree = "<group>";
+		};
+		F8842EF428C459BD00CFCF46 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F8842EF528C45CA700CFCF46 /* Color+RGBA.swift */,
+				F8CE02AF28C5D6DE00AEFDF8 /* String+RemovingDuplicateCharacters.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8842EE228C457ED00CFCF46 /* ContentView.swift in Sources */,
+				F8842EEE28C4580D00CFCF46 /* Theme.swift in Sources */,
+				F8842EE228C457ED00CFCF46 /* ThemeChooserView.swift in Sources */,
+				F8842EF628C45CA700CFCF46 /* Color+RGBA.swift in Sources */,
+				F8CE02B028C5D6DE00AEFDF8 /* String+RemovingDuplicateCharacters.swift in Sources */,
 				F8842EE028C457ED00CFCF46 /* Theme_A6App.swift in Sources */,
+				F8842EF228C4591100CFCF46 /* ThemeStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
